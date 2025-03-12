@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komitmen - Faisal & Diana</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+        }
+        header {
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            background: transparent;
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 15px;
+            z-index: 10;
+            font-size: 18px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f1f1f1;
+            padding: 10px;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #fff;
+            background-color: #8e44ad;
+            box-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad;
+            transform: scale(1.1);
+        }
+        nav ul li a:active {
+            color: #fff;
+            background-color: #d35400;
+            box-shadow: 0 0 15px #d35400, 0 0 25px #d35400;
+            transform: scale(1.05);
+        }
+        .container {
+            padding: 100px 50px;
+        }
+        h2 {
+            color: #f1f1f1;
+            font-size: 36px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        p {
+            color: #bdc3c7;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 0 20px;
+        }
+        .commitment-card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .commitment-card {
+            background-color: #34495e;
+            color: #fff;
+            width: 300px;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .commitment-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.7), 0 0 30px rgba(52, 152, 219, 0.7);
+        }
+        .commitment-card h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .commitment-card .commitment-description {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .commitment-card .commitment-quote {
+            font-size: 22px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .commitment-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://source.unsplash.com/300x300/?love,romance');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: -1;
+            transition: all 0.3s ease;
+        }
+        .commitment-card:hover:before {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpeg" alt="Logo Faisal & Diana">
+        Faisal & Diana
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+           <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kisahkita.html">Kisah Kita</a></li>
+            <li><a href="komitmen.html">Komitmen</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Komitmen Kami</h2>
+        <p>Komitmen adalah pondasi yang kuat dalam hubungan kami. Ini adalah janji kami satu sama lain, untuk selalu saling mendukung, mencintai, dan tumbuh bersama.</p>
+        
+        <div class="commitment-card-container">
+            <div class="commitment-card">
+                <h3>Komitmen untuk Cinta Sejati</h3>
+                <p class="commitment-description">
+                    Kami berkomitmen untuk selalu mencintai satu sama lain tanpa syarat, untuk menjadi sahabat terbaik, dan untuk selalu ada dalam suka maupun duka. Cinta ini adalah perjalanan yang akan kami tempuh bersama.
+                </p>
+                <p class="commitment-quote">"Cinta sejati bukan hanya tentang bagaimana kita memulai, tapi bagaimana kita bertumbuh bersama setiap hari."</p>
+            </div>
+
+            <div class="commitment-card">
+                <h3>Komitmen untuk Saling Mendukung</h3>
+                <p class="commitment-description">
+                    Kami berjanji untuk selalu mendukung impian satu sama lain, untuk memberi dorongan dan kekuatan saat dibutuhkan. Dalam setiap langkah hidup, kami berkomitmen untuk saling memberikan semangat dan keyakinan.
+                </p>
+                <p class="commitment-quote">"Dukungan adalah kekuatan terbesar yang bisa kita berikan satu sama lain, dan kami berkomitmen untuk itu." </p>
+            </div>
+
+            <div class="commitment-card">
+                <h3>Komitmen untuk Masa Depan Bersama</h3>
+                <p class="commitment-description">
+                    Kami berkomitmen untuk merencanakan masa depan bersama, membangun kehidupan yang bahagia, dan selalu berbagi setiap momen indah yang datang. Kami berdua percaya bahwa masa depan kami akan penuh dengan kebahagiaan dan petualangan.
+                </p>
+                <p class="commitment-quote">"Masa depan bersama adalah sesuatu yang kami impikan setiap hari, dan kami akan terus berjalan menuju itu." </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
